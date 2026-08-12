@@ -31,6 +31,10 @@ compress_html:
 sass:
   sass_dir: /assets/css/_sass
   style: compressed
+  silence_deprecations:
+    - import
+    - color-functions
+    - global-builtin
 
 include:
   - _pages

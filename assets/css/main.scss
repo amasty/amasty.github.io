@@ -5,10 +5,23 @@
 
 @charset "utf-8";
 
-@use 'layout' as *;
-@use 'variables' as *;
-@use 'profile' as *;
-@use 'footer' as *;
-@use 'style' as *;
-@use 'google-fonts' as *;
-@use 'syntax-highlighting' as *;
+// Width of the content area
+$content-width:    800px;
+$on-phone:         450px;
+$on-palm:          660px;
+$on-laptop:        1000px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// GitHub Pages currently uses a legacy Sass compiler, so keep these imports
+// for compatibility with the production build.
+@import 'variables';
+@import 'profile';
+@import 'footer';
+@import 'style';
+@import 'google-fonts';
+@import 'syntax-highlighting';
