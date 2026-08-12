@@ -3,8 +3,9 @@
 title: Лерсонство
 description: dino y.o. developer from Yekaterinburg
 
-baseurl: "/" #name of GitHub repository
+# baseurl: "/" #name of GitHub repository
 #url: "" #custom url to be used instead of GitHub repository
+url: "https://conf.amasty.name"
 email: #
 
 # Pagination

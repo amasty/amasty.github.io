@@ -8,3 +8,5 @@ group :jekyll_plugins do
   gem 'jekyll-email-protect'
   gem 'jekyll-target-blank'
 end
+
+gem "logger", "~> 1.7"
